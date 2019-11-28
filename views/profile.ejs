@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/styles.css">
+    <title>Profile</title>
+</head>
+<body>
+    <% include partials/nav-logged-in.ejs %>
+    <div class="container user-profile"> 
+        <div>
+            <h3><span><%= user.name %></span> , Welcome to your profile</h3>
+            <p>Your email is <span><%= user.email %></span></p>
+            <p class="message"><% include partials/messages.ejs %></p>
+        </div>
+    </div>
+    <% include partials/footer.ejs %>
+</body>
+</html>

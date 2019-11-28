@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/styles.css">
+    <title>Register</title>
+</head>
+<body>
+    <% include partials/nav.ejs %>
+    <div class="container register">        
+        <h3>Registeration Form</h3>
+        <p class="message"><% include partials/messages.ejs %></p> 
+        <form action="/register" method="POST">
+            <div class="form-inputs">
+                <div class="label">
+                    <label for="name">Name</label>
+                </div>
+                <div class="input">
+                    <input type="text" name="name" value="<%= typeof name != 'undefined' ? name : '' %>" >
+                </div>
+                <div class="label">
+                    <label for="email">Email</label>
+                </div>
+                <div class="input">
+                    <input type="email" name="email" value="<%= typeof email != 'undefined' ? email : '' %>" >
+                </div>
+                <div class="label">
+                    <label for="password">Password</label>
+                </div>
+                <div class="input">
+                    <input type="password" name="password" >
+                </div>
+            </div>
+            <div class="submit-btn">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <% include partials/footer.ejs %>
+</body>
+</html>

@@ -1,0 +1,174 @@
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+/*  ---------- header ------------- */
+.header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background: black;
+    padding: 1rem 0;
+    font-size: 1.3rem;
+    border: 1px solid black;
+}
+
+.navbar {
+    justify-self: end;
+}
+
+.navbar li {
+    list-style: none;
+    display: inline-block;
+    margin: .5rem 1.5rem;
+    padding: .3rem .7rem;
+}
+
+.navbar li:hover {
+    background: #fff;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar li a:hover {
+    color: black;
+}
+
+.profile li {
+    list-style: none;
+    display: inline-block;
+    margin: .5rem 1.5rem;
+}
+
+.profile li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* ------------- dashboard ------------- */
+.dasboard-header {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    padding-left: 1rem;
+}
+
+.dashboard-body {
+    border: 1px solid black;
+    height: 70vh;
+}
+
+/* ------------- form ---------------- */
+.form-inputs {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-gap:1rem;
+}
+
+.label {
+    justify-self: end;
+    align-self: center;
+}
+
+.input input {
+    width: 30%;
+    padding:.5rem;
+    border: 1px solid black;
+    border-radius: .5rem;
+}
+
+.submit-btn {
+    text-align: center;
+    margin: 1rem;    
+}
+
+.submit-btn button {
+    padding:.5rem 1.5rem;
+    border-radius: .5rem;
+    background: #fff;
+    color: black;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.submit-btn button:hover {
+    color: #fff;
+    background: black;
+}
+
+/* ------------- register ------------- */
+.register {
+    height: 70vh;
+    border: 1px solid black;
+}
+
+.register h3 {
+    text-align: center;
+}
+
+/* ------------ login ---------------- */
+.login {
+    height: 70vh;
+    border: 1px solid black;
+}
+
+.login h3 {
+    text-align: center;
+}
+
+/* ------------- profile -------------- */
+.user-profile {    
+    border: 1px solid black;
+    height: 70vh;
+}
+
+.user-profile div {
+    padding-left: 1rem;
+}
+
+.user-profile span {
+    color: red;
+}
+
+/* --------------- update-profile ------------ */
+.update-profile {
+    border: 1px solid black;
+    height: 70vh; 
+}
+
+.update-profile h3 {
+    padding: 1rem;
+}
+/* ---------------- message ------------ */
+.message {
+    background: #a6a6a6;
+    text-align: center;
+    margin:.5rem 10rem;
+}
+
+/* ------------- footer --------------- */
+footer {    
+    color: white;
+    padding: 1rem 0;
+    font-size: 1rem;
+    text-align: center;
+    background: black;
+    border: 1px solid black;
+}
+
+footer ul {
+    padding-left: 0;
+}
+
+footer li {
+    display: inline-block;
+    list-style: none;
+    padding:0 1rem;
+}
+
+footer a {
+    color: #fff;
+}

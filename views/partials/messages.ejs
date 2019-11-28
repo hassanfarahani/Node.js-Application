@@ -1,0 +1,18 @@
+<% if (typeof errors != 'undefined') { %>
+    <% errors.forEach(error => { %>
+        <%= error.msg %>
+    <% })%>
+<%} %>
+
+<!-- if there is no success_msg (global variables), it is going to be an empty string -->
+<% if (success_msg != '') { %>
+    <%= success_msg %>
+<%} %>
+
+<% if (error_msg != '') { %>
+    <%= error_msg %>
+<%} %>
+
+<% if (error != '') { %>
+    <%= error %>
+<%} %>
